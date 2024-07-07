@@ -1,0 +1,107 @@
+.contacts-box{
+    display: flex;
+    .contacts-box__left-col{
+        width: 42.72%;
+        padding-right: 3.6rem;
+        box-sizing: border-box;
+        .contact-item{ 
+            margin-bottom: 3rem; 
+            .contact-item__key{
+                
+            }
+            .contact-item__value{
+                
+            }
+            
+        }
+    }
+    .contacts-box__right-col{
+        width: 57.28%;
+        
+        
+    }   
+}
+#map{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+    // padding-top: 90.05%;
+    overflow: hidden;
+    box-sizing: border-box;
+    .ymaps-map{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 100% !important;
+    }
+    .ymaps-image-with-content{
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        &::before,
+        &::after{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: var(--dark);
+            opacity: 0.4;
+            border-radius: 50%;
+            z-index: -1;
+            transform: scale(1);
+        }
+        &:before{
+            animation: pulse 2s ease-out infinite;
+        }
+        &:after{
+            animation: pulse 2s 1s ease-out infinite;
+        }
+    }
+}
+
+@keyframes pulse{
+    100%{
+        transform: scale(2.5);
+        opacity: 0;
+    }
+}
+
+
+// =======================
+@media screen and (max-width: 800px){
+    .contacts-box {
+        .contacts-box__left-col { 
+            padding-right: 2.8rem; 
+        }
+    }
+}
+@media screen and (max-width: 800px){
+    .contacts-box{
+        flex-direction: column;
+        .contacts-box__left-col{
+            width: 100%;
+            margin-bottom: 3rem;
+            .contact-item {
+                margin-bottom: 2rem;
+            }
+        }
+        .contacts-box__right-col{
+            width: 100%;
+        }
+    } 
+    #map{
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 100%;
+        border-radius: 2rem;
+        padding-top: 133.75%;
+        overflow: hidden;
+        box-sizing: border-box;
+    }
+}

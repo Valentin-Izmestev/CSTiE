@@ -1,0 +1,22 @@
+@import 'fonts';
+@import 'global';
+@import 'typography';
+
+@import 'plagins/simplebar';
+@import 'plagins/swiper-bundle';
+@import 'plagins/lightgallery-bundle';
+
+@import 'forms';
+@import 'elements';
+@import 'header';
+@import 'footer';
+@import 'modal';
+
+// @import 'sections/types-of-activities-section';
+
+@import 'pages/main';
+@import 'pages/about';
+@import 'pages/contacts';
+ 
+@import 'media.scss';
+

@@ -1,0 +1,52 @@
+.about-company{
+    display: flex;
+    margin-bottom: 6rem;
+    .about-company__left-col{
+        width: 65.57%;
+        p{
+            margin-top: 0;
+        }
+    }
+    .about-company__right-col{
+        width: 34.43%;
+        box-sizing: border-box;
+        padding-left: 3rem;
+        .about-paremeters-item{
+            background-color: var(--soft);
+            &:not(:last-child){
+                margin-bottom: 2rem;
+            }
+        }
+    } 
+}
+
+
+// ====================================================
+@media screen and (max-width: 700px){
+    .about-company{
+        flex-direction: column;
+        margin-bottom: 4rem;
+        .about-company__left-col{
+            width: 100%;
+            margin-bottom: 2rem;
+        }
+        .about-company__right-col{
+            width: 100%; 
+            padding-left: 0;
+           
+            .about-paremeters-item{ 
+                flex-direction: row;
+                align-items: center;
+                &:not(:last-child){
+                    margin-bottom: 1rem;
+                }
+                .about-paremeters-item__count {
+                    margin-bottom: 0;
+                    margin-right: 1rem;
+                    min-width: 63px;
+                    font-size: 3rem;
+                }
+            }
+        } 
+    }
+}

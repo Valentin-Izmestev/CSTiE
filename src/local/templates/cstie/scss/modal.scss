@@ -1,0 +1,98 @@
+.great-shadow{
+    position: fixed; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: flex-start;
+    padding: 2rem;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(49, 43, 31, 0.7);
+    z-index: 2000;
+    transition: var(--great-transition);
+    overflow: hidden;
+    overflow-y: auto;
+    box-sizing: border-box;
+    opacity: 0;
+    visibility: hidden;
+    &.show{
+        opacity: 1;
+        visibility: visible;
+    }
+}
+.modal{
+    position: relative;
+    display: none;
+    margin-top: auto;
+    margin-bottom: auto;
+    border-radius: 2rem;
+    padding: 4rem;
+    background-color: var(--light);
+    max-width: 48rem;
+    transition: all 200ms ease;
+    opacity: 0;
+    visibility: hidden;
+    &.show{
+        display: block;
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    .modal__title{
+        margin-bottom: 2rem;
+        font-size: 2.4rem; 
+    }
+    p{
+        margin: 0;
+        margin-top: 2rem;
+        padding: 0;
+        font-size: 1.4rem;
+    }
+    .form-item{
+        margin-top: 3rem;
+    }
+    .btn[type="submit"]{
+        display: block;
+        width: 100%;
+        margin-top: 3rem;
+    }
+    .modal-approval{
+        display: block; 
+        margin-top: 2rem;
+        text-align: center;
+        font-size: 1.3rem;
+        a{
+            color: var(--main);
+            text-decoration: underline;
+            &:hover{
+                text-decoration: none;
+            }
+        }
+    }
+    .modal__message{ 
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        background-color: var(--light);
+        padding: 4rem;
+        text-align: center;
+        transition: var(--great-transition);
+        opacity: 0;
+        visibility: hidden;
+        &.show{
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+}
+.modal--consultation{
+    
+}

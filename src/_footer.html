@@ -1,0 +1,74 @@
+<footer id="footer">
+     <div class="footer__top">
+        <div class="inner">
+            <div class="footer-top__left-col">
+                <img src="./local/templates/cstie/img/footer-logo.svg" alt="Логотип центра строительных технологий и экспертиз" class="footer-logo">
+            </div>
+            <div class="footer-top__right-col">
+                <div class="footer-contacts">
+                    <div class="footer-contacts__left-col">
+                        <div class="contact-item">
+                            <span class="contact-item__key">Московский офис</span>
+                            <span class="contact-item__value">Алтуфьевское шоссе д 48 корп. 1 офис 910</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-item__key">Юридический адрес</span>
+                            <span class="contact-item__value">141204, Россия, Московская область, г. Пушкино, ул. Грибоедова, д. 7, этаж 3, пом. 310/1</span>
+                        </div>
+                    </div>
+                    <div class="footer-contacts__right-col">
+                        <div class="contact-item">
+                            <span class="contact-item__key">телефон</span>
+                            <span class="contact-item__value">8 (495) 411-21-25</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-item__key">e-mail</span>
+                            <a href="mailto:74954112125@mail.ru" class="contact-item__value">74954112125@mail.ru</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </div>
+     <div class="footer__bottom">
+        <div class="inner">
+            <span class="footer__copyright">© 2023 ООО ЦСТиЭ Все права защищены</span>
+            <a href="#" class="footer__aproval">Политика конфиденциальности</a>
+        </div>
+     </div> 
+</footer>
+<div class="great-shadow">
+    <div class="modal modal--consultation" id="consultation" >
+        <form class="form form--consultation application-form">
+            <h2 class="modal__title"> 
+            </h2>
+            <p class="modal__text"> 
+            </p>
+            <input type="hidden" name="manager-message" class="modal__manager-message">
+            <label class="form-item">
+                <input class="form-item__field" type="text" name="name" placeholder="Ваше имя*" required="required">
+                <span class="form-item__caption">Ваше имя*</span>
+            </label>
+            <label class="form-item">
+                <input class="form-item__field phone-mask" type="tel" name="tel" placeholder="Номер телефона*" required="required">
+                <span class="form-item__caption">Номер телефона*</span>
+            </label>
+            <label class="form-item">
+                <input class="form-item__field" type="email" name="email" placeholder="E-mail" pattern="^\S+@\S+\.\S+$">
+                <span class="form-item__caption">E-mail</span>
+            </label>
+            <button class="btn btn--dark" type="submit">отправить заявку</button>
+            <span class="modal-approval">
+                Нажимая на кнопку “отправить заявку” вы соглашаетесь с <a href="#">политикой конфиденциальности</a>
+            </span>
+        </form>
+        <div class="modal__message modal__message--success show">
+            <h2 class="modal__title">
+                Ваша заявка отправлена!
+            </h2>
+            <p>
+                Спасибо за обращение, наши специалисты свяжутся с вами в ближайшее время
+            </p>
+        </div>
+    </div> 
+</div>
